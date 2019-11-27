@@ -1,0 +1,28 @@
+.wrapper{
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main';
+}
+header{
+    grid-area: header; 
+    background-color:#f1f1f1;
+}
+main{
+    grid-area: main;
+    display:grid;
+    grid-template-rows:200px 200px;
+    grid-template-areas:'s1 s1'
+                        's2 s2';
+}
+section{
+    font-size: 30px;
+}
+section:nth-child(1){
+    grid-area:s1;
+    background-color:green;
+}
+section:nth-child(2){
+    grid-area: s2;
+    background-color: blue;
+}
